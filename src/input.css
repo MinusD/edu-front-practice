@@ -96,3 +96,37 @@
 .mbc-btn-tmp:active {
     background-color: darkorchid;
 }
+
+
+.mbc-input-div {
+    @apply relative;
+}
+
+.mbc-input-div > label {
+    @apply absolute px-2 ml-2 -mt-2 font-medium bg-gray-800 text-gray-100 ;
+}
+.mbc-input-div > input {
+    @apply block w-full px-4 py-2.5 mt-2 text-base placeholder-gray-400 bg-gray-800 border border-gray-300 rounded-md focus:outline-none focus:border-purple-500 focus:shadow focus:shadow-purple-500;
+}
+
+.mbc-radio-btn {
+    @apply flex items-center;
+}
+
+.mbc-radio-btn > input {
+    @apply h-5 w-5 active:text-purple-700;
+}
+
+.mbc-radio-btn > label {
+    @apply pl-3 text-base font-medium text-gray-200;
+    font-size: 110%;
+}
+
+.mbc-magic-number-btn {
+
+}
+
+.mbc-magic-number-btn::placeholder {
+    @apply underline;
+}
+
