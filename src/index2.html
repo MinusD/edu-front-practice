@@ -1,0 +1,232 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <title>О нас</title>
+  <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/MinusD/MBC-d.ru/master/public/favicon.ico">
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap'); 
+</style>
+<body>
+<div class="h-auto w-full bg-gray-900 mbc-dark-text relative">
+<div class="fixed bottom-2 z-10 right-10">For student by student</div>
+  <nav class="shadow bg-gray-800 text-gray-200 rounded-b-lg w-full absolute ">
+    <div class="h-16 mx-auto px-5 flex items-center justify-between">
+        <a class="text-2xl hover:text-cyan-500 transition-colors cursor-pointer"><img class="h-16" src="https://mbc-d.ru/storage/site-images/mbc.png"></a>
+        
+        <ul class="flex items-center gap-5">
+          <li><a class="mbc-nav-link" href="">Link 1</a></li>
+          <li><a class="mbc-nav-link" href="">Link 2</a></li>
+          <li><a class="mbc-nav-link" href="">Link 3</a></li>
+          <li><a class="mbc-nav-link" href="">Link 4</a></li>
+          <li><a class="mbc-nav-link" href="">Link 5</a></li>
+        </ul>
+    </div>
+ </nav> 
+<aside class="fixed  h-auto ml-5 px-5 py-2 grid grid-cols-1 gap-y-4 bg-gray-800 rounded-b-lg">
+    <div class=""><a class="mbc-aside-a">Главная</a></div>
+    <div class=""><a class="mbc-aside-a">Вторая</a></div>
+    <div class=""><a class="mbc-aside-a">Не Главная</a></div>
+</aside>
+
+  <main class="p-10 flex flex-col items-center justify-center">
+    <div class="mt-10"></div>
+    <h1 class="mbc-dark-title" id="header">Пару слову о наше команде</h1>
+
+    <!-- Блок учасники -->
+    <section class="mbc-dark-container">
+      <h2 class="mbc-dark-title-2">Учасники</h2>
+      <ol class="list-decimal">
+        <li>Луковников Дмитриий</li>
+          <ul class="list-disc list-inside">
+            <li>FRONT-end dev</li>
+            <li>BACK-end dev</li>
+            <li>Founder</li>
+          </ul>
+        <li>Кто-то ещё</li>
+          <ul class="list-disc list-inside">
+            <li>BACK-end dev</li>
+            <li><a href="#misha" class="text-violet-400">Цитатки</a></li>
+          </ul>
+      </ol>
+    </section>
+
+    <!-- Блок Данные  -->
+    <section class="mbc-dark-container">
+      <h2 class="mbc-dark-title-2">Данные</h2>
+      <p>Мы умеет работать с большим количеством разных данных. <br>Например формат <code class="text-indigo-400">json</code>. <br></p>
+      <pre class="mbc-dark-area">
+{"menu": {
+"id": "file",
+"value": "File",
+"popup": {
+  "menuitem": [
+    {"value": "New", "onclick": "CreateNewDoc()"},
+    {"value": "Open", "onclick": "OpenDoc()"},
+    {"value": "Close", "onclick": "CloseDoc()"}
+    ]
+  }
+}}</pre>
+    </section>
+
+    <!-- Блок умения -->
+    <section class="mbc-dark-container">
+      <h2 class="mbc-dark-title-2" id="misha">Умения</h2>
+        <p>
+          Как однажды сказал <b>Миаил Гальцев</b>:
+          <blockquote cite="https://mbc-d.ru/about" class="mbc-dark-area">
+            Бэк конечно крутой, но без фронта никуда...
+          </blockquote>
+          <cite>Реальная жизнь</cite>
+          <br><br>
+          А и правда, насколько <strong>крутым</strong> и хорошим не был бы бэк, без <i>взаимодействия</i> 
+          с пользователем <u>никуда</u>.
+          <br><br>
+          <em>Поэтому фронтентеры важны!</em> <hr class="mb-3">
+          Это так же истинно, как: <var>a</var><sub>1</sub><sup>2</sup> + <var>a</var><sub>2</sub><sup>2</sup> = <var>a</var><sub>3</sub><sup>2</sup>
+          
+          Так же как Пифагор доказал это в городе <cite>Самос</cite>, так же <abbr title="MBC Studio">MBCS</abbr>
+        </p>
+    </section>
+
+    <!-- Блок Контакты -->
+    <section class="mbc-dark-container">
+      <h2 class="mbc-dark-title-2">Контакты</h2>
+      <ol type="I" start="3" class="list-[upper-roman] ml-3">
+        <li>...</li>
+        <li><a href="tel:+78005553535">8 (800) 555-35-35</a></li>
+        <li><a href="mailto:lukovnikov50@mail.ru">lukovnikov50@mail.ru</a></li>
+        <li><a href="https://mbc-d.ru" target="_blank">mbc-d.ru</a></li>
+        <li>...</li>
+      </ol>
+    </section>
+
+
+    <!-- Блок Проекты -->
+    <section class="mbc-dark-container">
+      <h2 class="mbc-dark-title-2">Проекты</h2>
+
+      <article class="bg-gray-900 p-4 rounded-xl ">
+        <article class="mbc-article">
+          <h2 class="text-lg underline">MBC-d.ru</h2>
+          <p>Краткое описание  ....</p>
+        </article>
+        <article class="mbc-article">
+          <h2 class="text-lg underline">Органайзер</h2>
+          <p>Краткое описание умеет много чего</p>
+        </article>
+        <article class="mbc-article">
+          <h2 class="text-lg underline">Название</h2>
+          <p>Краткое описание</p>
+        </article>
+      </article>
+
+    </section>
+
+    <!-- Блок Технологии -->
+    <section class="mbc-dark-container">
+      <h2 class="mbc-dark-title-2">Технологии</h2>
+      <div class="mbc-termins-list">
+        <dt>Spring Framework</dt>
+        <dd>Универсальный фреймворк с открытым исходным кодом для Java-платформы.</dd>
+        
+        <dt>ReactJS</dt>
+        <dd>JavaScript-библиотека с открытым исходным кодом для разработки пользовательских интерфейсов.</dd>
+      
+        <dt>Tailwind CSS</dt>
+        <dd>Это CSS-фреймворк с открытым исходным кодом. Основная особенность этой библиотеки заключается в том, что, в отличие от других CSS-фреймворков, таких как Bootstrap, она не предоставляет ряд предопределенных классов для таких элементов, как кнопки или таблицы.</dd>
+        
+        <dt>Nginx</dd>
+        <dd>Веб-сервер и почтовый прокси-сервер, работающий на Unix-подобных операционных системах. </dt>
+        <dd>Российский аналог Apache</dt>
+
+        <dt>PostgreSQL</dt>
+        <dd>Cвободная объектно-реляционная система управления базами данных. </dd>
+        <dd>Более мощная СУБД чем MySQL.</dd>
+      </div>
+    </section>
+
+        <!-- Блок Скриншоты -->
+    <section class="mbc-dark-container">
+      <h2 class="mbc-dark-title-2">Скриншоты</h2>
+      <div class="flex flex-col items-center gap-4" >
+        <div><img usemap="#shapes" src="https://addcatalogs.manyweb.ru/images/mbc-d.ru.jpg" class="rounded-md ">
+        </div>
+        <div><img src="https://addcatalogs.manyweb.ru/images/m/mbc-d.ru_m_0.jpg" class="rounded-md" width="90%" height="90%">
+        </div>
+      </div>
+      
+      <map name="shapes">
+        <area shape="polygon" coords="0,0,0,1000,200,100" href="#header">
+        <area shape="rectangle" coords="500,0,700,400" href="#misha">
+        <area shape="circle" coords="500,400,200" href="https://mbc-d.ru" target="_blank">
+      </map>
+      <h3 class="mt-2 text-gray-300">Скоро интерфейс измениться</h3>
+    </section>
+
+    <!-- Блок Ручные классы -->
+    <section class="mbc-dark-container relative">
+      <div class="absolute bottom-1 right-1">(c) MinusD</div>
+      <h2 class="mbc-dark-title-2">Ручные классы</h2>
+      <div class="mbc-hand-block">
+        <a>Ссылка 1</a>
+        <a>Ссылка 2</a>
+        <hr>
+        <div class="mbc-hand-element">
+          <div class="mbc-hand-element">
+            <span class="mbc-near">Первый</span>
+            <span class="">Второй</span> <span class="">Третий</span>
+          </div>
+        </div>
+
+        <div id="ha">
+          Тестовый текст<span class="mbc-near"> - 123</span>
+        </div>
+        <span class="mbc-near-2"> - 123</span>
+          <div class="">
+            <span class="mbc-near-2">Первый</span>
+            <span>Второй </span>
+            <span>Третий</span>
+          </div>
+          <hr>
+          <a class="mbc-hand-link" href="#header">Посети эту ссылку</a>
+          <a class="mbc-hand-link" href="https://mbc-d.ru" target="_blank">Посети эту ссылку 2</a>
+          <a class="mbc-hand-link" href="https://mbc-d.ru/about" target="_blank">Посети эту ссылку 3</a>
+          <hr>
+
+          <button class="mbc-btn-tmp">
+            123
+          </button>
+      </div>
+    </section>
+
+    <!-- Блок оптикание -->
+    <section class="mbc-dark-container relative">
+      <h2 class="mbc-dark-title-2">Ручные оптикание</h2>
+      <img class="float-right hover:float-left h-36 w-auto m-4" src="https://sun1.userapi.com/sun1-25/s/v1/ig2/p52rHTju9m_KQKXFnVV6JSiG1zt8-zX18btd1giMzUU-3prflhTaCrk1gGxA8B49LyGaEDxcNqV3YZQMRbxHSlj9.jpg?size=431x770&quality=95&type=album" alt="">
+      <p class="mt-4">А так же мы умеес шутить очень смешные анекдоты. Прям очень смешные. А так же мы умеес шутить очень смешные анекдоты. Прям очень смешные. А так же мы умеес шутить очень смешные анекдоты. Прям очень смешные. А так же мы умеес шутить очень смешные анекдоты. Прям очень смешные. А так же мы умеес шутить очень смешные анекдоты. Прям очень смешные.
+      </p>
+      </section>
+  </div>
+
+  <!-- Футер -->
+  <section class="bg-gray-900">
+  <footer class="p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
+		<span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2019-2022 <a href="https://mbc-d.ru" class="hover:underline" target="_blank">MBC Studio</a>. All Rights Reserved. With the support of MinusD. 
+    </span>
+		<ul class="flex flex-wrap items-center mt-3 sm:mt-0">
+				<a href="#header" class="mr-4 text-sm text-gray-500 hover:underline md:mr-6 dark:text-gray-400">О нас</a>
+			</li>
+			<li>
+				<a href="t.me/MinusD" class="text-sm text-gray-500 hover:underline dark:text-gray-400">Контакты</a>
+			</li>
+		</ul>
+    <address class="text-gray-500">Moscow</address>
+	</footer>
+</section>
+</div>
+</body>
+</html>
