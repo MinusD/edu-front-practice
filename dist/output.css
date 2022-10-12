@@ -551,6 +551,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.static {
+  position: static;
+}
+
 .fixed {
   position: fixed;
 }
@@ -1228,7 +1232,7 @@ video {
 .mbc-flex-item {
   margin-top: 2.5rem;
   display: block;
-  width: 18rem;
+  width: 24rem;
   flex: 1 1 auto;
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
@@ -1353,6 +1357,49 @@ video {
     height: 2.5rem;
     width: 2.5rem;
     visibility: visible;
+  }
+}
+
+.image-gallery {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .image-gallery {
+    margin: 5rem;
+  }
+}
+
+.image-gallery .column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.gallery-img-item img {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gallery-img-label {
+  position: absolute;
+  margin-top: -1.5rem;
+  border-top-right-radius: 0.5rem;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.8;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .image-gallery {
+    flex-direction: row;
   }
 }
 

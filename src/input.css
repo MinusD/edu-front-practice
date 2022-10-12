@@ -152,7 +152,7 @@
 
 
 .mbc-flex-item {
-    @apply rounded-lg shadow-xl mt-10 px-8 py-3 bg-gray-800 block w-72 flex-auto;
+    @apply rounded-lg shadow-xl mt-10 px-8 py-3 bg-gray-800 block w-96 flex-auto;
     
 }
 
@@ -245,4 +245,28 @@
         @apply block w-10 h-10;
         visibility: visible;
     }
+}
+
+
+.image-gallery {
+    @apply flex flex-col gap-8 m-4 md:m-20;
+}
+  
+.image-gallery .column {
+    @apply flex flex-col gap-8;
+}
+
+.gallery-img-item img {
+    @apply w-full h-full rounded-lg object-cover;
+
+}
+
+.gallery-img-label {
+    @apply -mt-6 px-2 absolute rounded-tr-lg bg-opacity-80 bg-gray-800;
+}
+
+@media only screen and (min-width: 768px) {
+.image-gallery {
+    flex-direction: row;
+}
 }
