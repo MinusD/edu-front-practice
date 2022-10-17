@@ -397,15 +397,14 @@
 
 .noti-item:hover {
     @apply bg-gray-700 scale-110 p-4;
-
 }
 
 .cards-container {
-    @apply flex flex-wrap justify-between content-between gap-4 px-3 md:px-10 mb-5;
+    @apply flex flex-wrap justify-center gap-4 px-3 md:px-10 mb-5;
 }
 
 .card {
-    @apply flex flex-col gap-4 rounded-lg bg-gray-800 w-1/4 h-auto relative ;
+    @apply mx-4 flex flex-col gap-4 rounded-lg bg-gray-800 w-[430px] h-auto relative ;
 }
 
 .card img {
