@@ -399,3 +399,43 @@
     @apply bg-gray-700 scale-110 p-4;
 
 }
+
+.cards-container {
+    @apply flex flex-wrap justify-between content-between gap-4 px-3 md:px-10 mb-5;
+}
+
+.card {
+    @apply flex flex-col gap-4 rounded-lg bg-gray-800 w-1/4 h-auto relative ;
+}
+
+.card img {
+    @apply overflow-hidden h-full rounded-lg;
+}
+
+.card-hover-content {
+    @apply z-10 h-full w-full flex flex-col justify-end gap-2 absolute transition-all duration-500 rounded-lg p-3 text-gray-100 opacity-0;
+    transition: all 0.5s;
+}
+
+.card-hover-content:before {
+    @apply -z-20 absolute top-0 left-0 w-full h-full rounded-lg;
+    background-image: linear-gradient(to top, #18b775, #0e7ad6, rgba(0, 0, 0, 0.5));
+    opacity: 0.8;
+    content: '';
+}
+
+.card .card-title {
+    @apply text-xl font-bold;
+}
+
+.card .card-button {
+    @apply mt-2;
+}
+
+.card .card-button button {
+    @apply bg-gray-50 text-gray-800 w-full font-bold py-2 px-4 rounded;
+}
+
+.card-hover-content:hover {
+    @apply opacity-100;
+}
