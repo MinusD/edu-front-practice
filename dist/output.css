@@ -1796,6 +1796,7 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 500ms;
   transition: all 0.5s;
+  transform: translateY(-30px);
 }
 
 .card-hover-content:before {
@@ -1809,6 +1810,7 @@ video {
   background-image: linear-gradient(to top, #18b775, #0e7ad6, rgba(0, 0, 0, 0.5));
   opacity: 0.8;
   content: '';
+  transform: translateY(0);
 }
 
 .card .card-title {
@@ -1837,6 +1839,7 @@ video {
 
 .card-hover-content:hover {
   opacity: 1;
+  transform: translateY(0);
 }
 
 .video-container {
