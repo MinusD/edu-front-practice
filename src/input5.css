@@ -24,7 +24,7 @@
 }
 
 .mbc-dark-container {
-    @apply rounded-lg shadow-xl mt-10 px-8 py-3 bg-gray-600 relative;
+    @apply rounded-lg shadow-xl mt-10 px-8 py-3 bg-gray-800 relative;
 
     flex-basis: 500px; height: 100%;
 }
@@ -152,14 +152,8 @@
 
 
 .mbc-flex-item {
-    @apply rounded-lg shadow-xl mt-10 px-8 py-3 block w-96 flex-auto;
-    background: rgba(0, 0, 0, 0.31);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(4.5px);
-    -webkit-backdrop-filter: blur(4.5px);
-    /*border: 1px solid rgba(0, 0, 0, 0.1);*/
-    /*border: 1px solid rgba( 255, 255, 255, 0.18 );*/
+    @apply rounded-lg shadow-xl mt-10 px-8 py-3 bg-gray-800 block w-96 flex-auto;
+    
 }
 
 .mbc-menu-desktop {
@@ -190,6 +184,7 @@
 #ham-btn {
     @apply cursor-pointer absolute right-2 top-2;
     visibility: hidden;
+    
 }
 
 #ham-btn > span, span::after, span::before {
@@ -419,7 +414,6 @@
 .card-hover-content {
     @apply z-10 h-full w-full flex flex-col justify-end gap-2 absolute transition-all duration-500 rounded-lg p-3 text-gray-100 opacity-0;
     transition: all 0.5s;
-    transform: translateY(-30px);
 }
 
 .card-hover-content:before {
@@ -427,7 +421,6 @@
     background-image: linear-gradient(to top, #18b775, #0e7ad6, rgba(0, 0, 0, 0.5));
     opacity: 0.8;
     content: '';
-    transform: translateY(0);
 }
 
 .card .card-title {
@@ -444,7 +437,6 @@
 
 .card-hover-content:hover {
     @apply opacity-100;
-    transform: translateY(0);
 }
 
 .video-container {
