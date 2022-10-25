@@ -24,7 +24,7 @@
 }
 
 .mbc-dark-container {
-    @apply rounded-lg shadow-xl mt-10 px-8 py-3 bg-gray-800 relative;
+    @apply rounded-lg shadow-xl mt-10 px-8 py-3 bg-gray-600 relative;
 
     flex-basis: 500px; height: 100%;
 }
@@ -152,8 +152,14 @@
 
 
 .mbc-flex-item {
-    @apply rounded-lg shadow-xl mt-10 px-8 py-3 bg-gray-800 block w-96 flex-auto;
-    
+    @apply rounded-lg shadow-xl mt-10 px-8 py-3 block w-96 flex-auto;
+    background: rgba(0, 0, 0, 0.31);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+    /*border: 1px solid rgba(0, 0, 0, 0.1);*/
+    /*border: 1px solid rgba( 255, 255, 255, 0.18 );*/
 }
 
 .mbc-menu-desktop {
