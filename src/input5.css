@@ -402,16 +402,6 @@
     @apply flex flex-wrap justify-center gap-4 px-3 md:px-10 mb-5;
 }
 
-.cards-container:hover .hover-card
-{
-    filter: blur(20px);
-}
-
-.cards-container:hover .hover-card:hover
-{
-    filter: blur(0);
-}
-
 .hover-card {
     @apply mx-4 flex flex-col gap-4 rounded-lg bg-gray-800 w-[430px] h-auto relative ;
 }
@@ -423,6 +413,7 @@
 .card-hover-content {
     @apply z-10 h-full w-full flex flex-col justify-end gap-2 absolute transition-all duration-500 rounded-lg p-3 text-gray-100 opacity-0;
     transition: all 0.5s;
+    transform: translateY(-30px);
 }
 
 .card-hover-content:before {
@@ -430,6 +421,7 @@
     background-image: linear-gradient(to top, #18b775, #0e7ad6, rgba(0, 0, 0, 0.5));
     opacity: 0.8;
     content: '';
+    transform: translateY(0);
 }
 
 .hover-card .card-title {
@@ -446,6 +438,7 @@
 
 .card-hover-content:hover {
     @apply opacity-100;
+    transform: translateY(0);
 }
 
 .video-container {
@@ -477,235 +470,4 @@
 .video-container:hover > .video-intro {
     transform: scale(1.2);
     @apply opacity-100;
-}
-
-
-
-
-/* Всё кривое */
-
-.mainContainer {
-}
-
-.screen {
-    @apply w-full h-screen flex items-center justify-center content-center relative;
-}
-
-.icons
-{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.icon
-{
-    position: relative;
-    text-decoration: none;
-    display: flex; /*центрируем сами иконки*/
-    align-items: center;
-    justify-content: center;
-    width: 70px;
-    height: 70px;
-    margin: 10px;
-    background-color: #f2f2f2;
-    border-radius: 50%;
-    box-shadow: 0px 0px 5px #00000080;
-    transition: all 0.3s ease;
-    overflow: hidden;
-}
-
-.icon i
-{
-    font-size: 26px;
-    color: #67798e;
-    transition: all 0.3s ease;
-    z-index: 1;
-}
-
-.icon::after
-{
-    content: '';
-    width: 70px;
-    height: 70px;
-    position: absolute;
-    transform: translateY(-73px);
-    transition: all 0.3s ease;
-    background-image: linear-gradient(120deg, #dde50d 0%, #d106b5 100%);
-}
-
-.icon:after{background-color: #590b8d;
-}
-
-.icon:hover:after {
-    transform: translateY(0);
-}
-
-.loginFrom {
-    position: relative;
-    width: 400px;
-    min-height: 400px;
-    background: rgba(255, 255, 255, .2);
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(5px);
-    box-shadow: 0 25px 45px rgba(0, 0, 0, .1);
-    border: 1px solid rgba(255, 255, 255, 0.7);
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.loginFrom h2 {
-    @apply relative text-white text-3xl mb-3;
-}
-
-.loginFrom .loginInput
-{
-    width: 100%;
-    margin-top: 20px;
-}
-
-.loginInput input
-{
-    width: 100%;
-    background: rgba(255, 255, 255, 0.2);
-    border: none;
-    outline: none;
-    padding: 10px 20px;
-    border-radius: 35px;
-    box-shadow: 0 25px 45px rgba(0, 0, 0, .1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    font-size: 16px;
-    letter-spacing: 1px;
-    color: #fff;
-}
-
-
-.loginInput input::placeholder
-{
-    @apply text-white;
-}
-
-.square {
-    @apply z-50 w-12 h-12;
-    position: absolute;
-    background: rgba(255, 255, 255, .2);
-    backdrop-filter: blur(5px);
-    box-shadow: 0 25px 45px rgba(0, 0, 0, .1);
-    border: 1px solid rgba(255, 255, 255, 0.7);
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    animation: animateSquare 10s ease-in-out infinite;
-    animation-delay: calc(-1s * var(--i));
-}
-
-.square:nth-child(1)
-{
-    top: -50px;
-    right: -60px;
-    width: 100px;
-    height: 100px;
-}
-
-.square:nth-child(2)
-{
-    top: 150px;
-    left: -100px;
-    width: 120px;
-    height: 120px;
-    z-index: 2;
-}
-
-.square:nth-child(3)
-{
-    bottom: 50px;
-    right: -60px;
-    width: 80px;
-    height: 80px;
-    z-index: 2;
-}
-
-
-@keyframes animateSquare
-{
-    0%, 100%
-    {
-        transform: translateY(-40px);
-    }
-
-    50%
-    {
-        transform: translateY(40px);
-    }
-}
-
-.hover-cards-container {
-    @apply flex flex-wrap justify-center gap-4 px-3 md:px-10 mb-5;
-}
-
-.hover-card-2 {
-    @apply mx-4 flex flex-col gap-4 bg-gray-800 w-[430px] h-auto relative brightness-50;
-}
-
-.hover-card-2 img {
-    @apply overflow-hidden h-full rounded-lg;
-}
-
-.card-hover-content-2 {
-    @apply z-10 h-full w-full flex flex-col justify-end gap-2 absolute transition-all duration-500 rounded-lg p-3 text-gray-100;
-    transition: all 0.5s;
-}
-
-.hover-card-2::before, .hover-card-2::after
-{
-    content: " ";
-    position: absolute;
-    width: 0;
-    height: 0;
-    opacity: 0;
-    box-sizing: border-box;
-}
-
-.hover-card-2:before {
-    bottom: 0;
-    left: 0;
-    border-left: 5px solid #ea0707;
-    border-top: 5px solid #ea0707;
-}
-
-.hover-card-2:after {
-    top: 0;
-    right: 0;
-    border-bottom: 5px solid #ea0707;
-    border-right: 5px solid #ea0707;
-}
-
-.hover-card-2:hover::after,
-.hover-card-2:hover::before
-{
-    height: 100%;
-    width: 100%;
-    opacity: 1;
-}
-
-.hover-card-2:hover:before
-{
-    transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
-}
-
-.hover-card-2:hover:after
-{
-    transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
-}
-
-
-.hover-cards-container:hover .hover-card-2:hover {
-    @apply brightness-125;
 }
