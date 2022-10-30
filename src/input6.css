@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 
+
 .mbc-dark-title {
     @apply text-3xl text-center text-gray-50 font-bold;
     font-family: 'Nunito', sans-serif;
@@ -19,14 +20,13 @@
 
 .mbc-main-container {
     @apply pt-20 py-10 items-center justify-center;
-
+    
 }
 
 .mbc-dark-container {
     @apply rounded-lg shadow-xl mt-10 px-8 py-3 bg-gray-600 relative;
 
-    flex-basis: 500px;
-    height: 100%;
+    flex-basis: 500px; height: 100%;
 }
 
 .mbc-dark-area {
@@ -34,7 +34,7 @@
 }
 
 .mbc-termins-list {
-
+    
 }
 
 .mbc-termins-list dt {
@@ -51,8 +51,8 @@
 
 .mbc-aside-a {
     @apply flex flex-row items-center h-12 px-4 rounded-lg
-    text-gray-600 bg-gray-100 bg-indigo-300 font-bold
-    dark:text-gray-500 dark:bg-gray-100 w-full text-center;
+     text-gray-600 bg-gray-100 bg-indigo-300 font-bold
+      dark:text-gray-500 dark:bg-gray-100 w-full text-center;
 }
 
 .mbc-hand-block {
@@ -60,7 +60,6 @@
     border-radius: 5px;
     padding: 5px;
 }
-
 .mbc-hand-block > a {
     background-color: black;
 }
@@ -89,7 +88,6 @@
 .mbc-hand-link {
 
 }
-
 .mbc-hand-link:hover {
     color: aqua;
 }
@@ -115,7 +113,6 @@
 .mbc-input-div > label {
     @apply absolute px-2 ml-2 -mt-2 font-medium bg-gray-800 text-gray-100 ;
 }
-
 .mbc-input-div > input {
     @apply block w-full px-4 py-2.5 mt-2 text-base placeholder-gray-400 bg-gray-800 border border-gray-300 rounded-md focus:outline-none focus:border-purple-500 focus:shadow focus:shadow-purple-500;
 }
@@ -175,15 +172,15 @@
 
 
 .mbc-mobile-nav-link {
-    @apply
-    text-center
-    flex
-    justify-center
-    text-xl
-    p-3
-    border-t
-    border-gray-700
-    active:bg-cyan-600;
+    @apply 
+        text-center 
+        flex 
+        justify-center 
+        text-xl 
+        p-3 
+        border-t 
+        border-gray-700
+        active:bg-cyan-600;
 }
 
 #mbc-hamburger-btn {
@@ -241,17 +238,14 @@
     .mbc-menu-desktop {
         display: none;
     }
-
     .mbc-menu-mobile {
         @apply w-full flex flex-col justify-center items-center;
         display: none;
     }
-
     #mbc-hamburger-btn {
         display: block;
         opacity: 0;
     }
-
     #ham-btn {
         @apply block w-10 h-10;
         visibility: visible;
@@ -262,7 +256,7 @@
 .image-gallery {
     @apply flex flex-col gap-8 m-4 md:m-20;
 }
-
+  
 .image-gallery .column {
     @apply flex flex-col gap-8;
 }
@@ -277,9 +271,9 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .image-gallery {
-        flex-direction: row;
-    }
+.image-gallery {
+    flex-direction: row;
+}
 }
 
 .btn-container {
@@ -338,6 +332,7 @@
 }
 
 
+
 .beautiful-button-4 {
     @apply text-xl rounded bg-gradient-to-r from-indigo-500 via-purple-500 to-fuchsia-600 py-2 px-4 font-bold;
     transition: all 1s ease-in-out;
@@ -355,7 +350,6 @@
 .beautiful-button-5:hover {
     @apply animate-bounce;
 }
-
 .beautiful-button-6 {
     @apply text-xl bg-amber-400 text-white font-bold py-2 px-4 rounded;
 }
@@ -414,11 +408,13 @@
     @apply flex flex-wrap justify-center gap-4 px-3 md:px-10 mb-5;
 }
 
-.cards-container:hover .hover-card {
+.cards-container:hover .hover-card
+{
     filter: blur(20px);
 }
 
-.cards-container:hover .hover-card:hover {
+.cards-container:hover .hover-card:hover
+{
     filter: blur(0);
 }
 
@@ -467,6 +463,7 @@
 }
 
 
+
 .video-intro .video-title {
     @apply font-bold text-xl;
 }
@@ -489,12 +486,19 @@
 }
 
 
+
+
 /* Всё кривое */
+
+.mainContainer {
+}
+
 .screen {
     @apply w-full h-screen flex items-center justify-center content-center relative;
 }
 
-.icons {
+.icons
+{
     width: 100%;
     height: 100vh;
     display: flex;
@@ -502,7 +506,8 @@
     justify-content: center;
 }
 
-.icon {
+.icon
+{
     position: relative;
     text-decoration: none;
     display: flex; /*центрируем сами иконки*/
@@ -518,14 +523,16 @@
     overflow: hidden;
 }
 
-.icon i {
+.icon i
+{
     font-size: 26px;
     color: #67798e;
     transition: all 0.3s ease;
     z-index: 1;
 }
 
-.icon::after {
+.icon::after
+{
     content: '';
     width: 70px;
     height: 70px;
@@ -535,8 +542,7 @@
     background-image: linear-gradient(120deg, #dde50d 0%, #d106b5 100%);
 }
 
-.icon:after {
-    background-color: #590b8d;
+.icon:after{background-color: #590b8d;
 }
 
 .icon:hover:after {
@@ -563,12 +569,14 @@
     @apply relative text-white text-3xl mb-3;
 }
 
-.loginFrom .loginInput {
+.loginFrom .loginInput
+{
     width: 100%;
     margin-top: 20px;
 }
 
-.loginInput input {
+.loginInput input
+{
     width: 100%;
     background: rgba(255, 255, 255, 0.2);
     border: none;
@@ -585,7 +593,8 @@
 }
 
 
-.loginInput input::placeholder {
+.loginInput input::placeholder
+{
     @apply text-white;
 }
 
@@ -603,14 +612,16 @@
     animation-delay: calc(-1s * var(--i));
 }
 
-.square:nth-child(1) {
+.square:nth-child(1)
+{
     top: -50px;
     right: -60px;
     width: 100px;
     height: 100px;
 }
 
-.square:nth-child(2) {
+.square:nth-child(2)
+{
     top: 150px;
     left: -100px;
     width: 120px;
@@ -618,7 +629,8 @@
     z-index: 2;
 }
 
-.square:nth-child(3) {
+.square:nth-child(3)
+{
     bottom: 50px;
     right: -60px;
     width: 80px;
@@ -627,12 +639,15 @@
 }
 
 
-@keyframes animateSquare {
-    0%, 100% {
+@keyframes animateSquare
+{
+    0%, 100%
+    {
         transform: translateY(-40px);
     }
 
-    50% {
+    50%
+    {
         transform: translateY(40px);
     }
 }
@@ -654,7 +669,8 @@
     transition: all 0.5s;
 }
 
-.hover-card-2::before, .hover-card-2::after {
+.hover-card-2::before, .hover-card-2::after
+{
     content: " ";
     position: absolute;
     width: 0;
@@ -678,127 +694,24 @@
 }
 
 .hover-card-2:hover::after,
-.hover-card-2:hover::before {
+.hover-card-2:hover::before
+{
     height: 100%;
     width: 100%;
     opacity: 1;
 }
 
-.hover-card-2:hover:before {
+.hover-card-2:hover:before
+{
     transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
 }
 
-.hover-card-2:hover:after {
+.hover-card-2:hover:after
+{
     transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
 }
 
+
 .hover-cards-container:hover .hover-card-2:hover {
     @apply brightness-125;
-}
-
-/* Грид */
-.mainContainer {
-    @apply w-full;
-    display: grid;
-    grid-template-columns: 200px auto 200px;
-    grid-template-areas:
-    "mbcHeader mbcHeader mbcHeader"
-    "mbcAside mbcContent mbcAds"
-    "mbcFooter mbcFooter mbcFooter";
-}
-
-.mbcBlock {
-    @apply border-2 border-blue-500 m-2 p-2;
-}
-
-.mbcHeader {
-    grid-area: mbcHeader;
-}
-
-.mbcAside {
-    grid-area: mbcAside;
-}
-
-.mbcContent {
-    grid-area: mbcContent;
-}
-
-.mbcAds {
-    grid-area: mbcAds;
-}
-
-.mbcFooter {
-    grid-area: mbcFooter;
-}
-
-
-@media screen and (max-width: 1000px) {
-    .mainContainer {
-        grid-template-columns: 100%;
-        grid-template-areas:
-    "mbcHeader  "
-    "mbcAside "
-    "mbcContent "
-    "mbcFooter";
-    }
-
-    .mbcAds {
-        @apply hidden;
-    }
-}
-
-.grid-content-card {
-    @apply bg-white shadow rounded-lg overflow-hidden relative flex flex-col justify-between
-    hover:bg-gray-300 transition-all duration-500;
-}
-
-.mbcForm {
-    @apply grid grid-cols-2 gap-4 p-10 rounded-lg shadow-md mt-10;
-    border-radius: 8px;
-    padding: 20px 30px;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.mbcInput {
-    @apply relative;
-}
-
-.mbcInput input {
-    @apply w-full border-0 p-2 bg-white relative;
-    padding: 10px;
-    box-sizing: border-box;
-    background: none;
-    outline: none;
-    resize: none;
-    border: 0;
-    font-family: 'Montserrat', sans-serif;
-    transition: all .3s;
-    border-bottom: 2px solid #bebed2;
-}
-
-.mbcInput span {
-    @apply absolute left-0 bottom-0 w-full h-2;
-    content: '';
-    background: linear-gradient(to right, #f9d423, #ff4e50);
-    width: 100%;
-    border-radius: 5px;
-    z-index: 10;
-    transition: all .3s;
-    opacity: 0;
-    transform: translateY(1px);
-}
-
-.mbcInput input:hover ~ span {
-    opacity: 100%;
-}
-
-.mbcInput input:focus ~ span {
-    opacity: 100%;
-    transform: translateY(-5px);
-}
-
-.mbcInput input:focus {
-    border-bottom: 2px solid #78788c;
-    width: 100%;
 }
