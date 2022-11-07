@@ -56,7 +56,7 @@ const checker = (event) => {
 }
 
 const start = () => {
-    isStarted = true;
+    isStarted = ! isStarted;
     console.log('start');
 }
 
