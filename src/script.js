@@ -72,3 +72,44 @@ const stop = () => {
     // Очищаем массив
     arr = [];
 }
+
+let isStarted2 = false;
+let arr2 = [];
+let count2 = 0;
+let interval2 = 2;
+
+
+const checker2 = (event) => {
+    if (isStarted2) {
+        if (count2 % interval2 === 0) {
+            let clonedNode = document.getElementById("collapse2").cloneNode(true);
+            clonedNode.id = "collapse2" + Math.random();
+
+            // Добавляем id элемента в массив
+            arr2.push(clonedNode.id);
+            clonedNode.style.display = "absolute";
+            clonedNode.style.top = event.clientY - 50 + "px";
+            clonedNode.style.left = event.clientX - 50 + "px";
+            document.getElementById('colcon2').appendChild(clonedNode);
+        }
+        count2++;
+    }
+}
+
+const start2 = () => {
+    isStarted2 = ! isStarted2;
+    console.log('start');
+}
+
+const stop2 = () => {
+    isStarted2 = false;
+    console.log('stop');
+
+    // Удаляем все элементы из массива
+    for (let i = 0; i < arr2.length; i++) {
+        document.getElementById(arr2[i]).remove();
+    }
+
+    // Очищаем массив
+    arr2 = [];
+}
