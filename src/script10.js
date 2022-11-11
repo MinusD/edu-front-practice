@@ -1,3 +1,20 @@
+let captchaBlock = document.getElementById('captcha');
+let captchaInput = document.getElementById('captcha-input');
+let captchaButton = document.getElementById('captcha-button');
+
+class Captcha {
+    constructor(param) {
+
+    }
+
+}
+
+// let captcha = new Captcha({
+//     length: 5,
+//
+// }
+
+
 let captcha = {
 
     fails: 0,
