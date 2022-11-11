@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ru">
 <head>
-<!--    <script src="https://kit.fontawesome.com/5605b824a7.js" crossorigin="anonymous"></script>-->
+    <!--    <script src="https://kit.fontawesome.com/5605b824a7.js" crossorigin="anonymous"></script>-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../dist/output.css" rel="stylesheet">
@@ -17,22 +17,11 @@
     <section class="secJS">
         <div class="capForm">
             <form class="mt-10 flex flex-col space-y-8">
-
                 <div id="captcha" class="captcha">
                     <span id="captcha-output"></span>
-                    <input type="text" id="captcha-input" />
+                    <input id="captcha-input" type="text"/>
                     <button type="button" id="captcha-button">Отправить</button>
                 </div>
-
-                <div>
-                    Введите капчу
-                    <input id="cap" class="w-full border rounded h-12 px-4 focus:outline-none text-gray-800"
-                           placeholder="Ответ "
-                           type="text"
-                    />
-                </div>
-
-
                 <div>
                     Хотите зарегистрироватсья?
                     <input id="ans" class="w-full border rounded h-12 px-4 focus:outline-none text-gray-800"
@@ -42,8 +31,8 @@
                 </div>
                 <div>
                     <div class="flex flex-col md:flex-row md:items-center justify-between ">
-                        <button onclick="reg()"
-                                class="bg-orange-500 text-sm active:bg-gray-700 cursor-pointer font-regular text-white px-4 py-2 rounded uppercase"
+                        <button id="btn-for-captcha" onclick="reg()" disabled
+                                class="bg-orange-500 text-sm active:bg-gray-700 cursor-pointer font-regular text-white px-4 py-2 rounded uppercase disabled:opacity-50 disabled:cursor-not-allowed disabled:active:bg-orange-500"
                                 type="button">
                             Отправить
                         </button>
@@ -54,6 +43,7 @@
     </section>
 
 </div>
+<script src="./script.js"></script>
 <script src="./script10.js"></script>
 </body>
 </html>
