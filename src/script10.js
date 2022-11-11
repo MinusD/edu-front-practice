@@ -67,3 +67,21 @@ class Captcha {
 
 let captcha = new Captcha(8);
 
+const reg = () => {
+    // let lk = {
+    //     name: 213,
+    // };
+    // console.log(lk.isEmpty());
+    const ans = document.getElementById('ans').value;
+    // Использовать isEmpty(obj)
+    // if (ans.isEmpty()) {
+    //     let inputAns = document.getElementById('ans');
+    //     inputAns.style.borderColor = 'red';
+    // } else {
+        if (ans === "Да") {
+            alert('Круто!');
+        } else {
+            alert('Попробуй ещё раз');
+        }
+    // }
+}
