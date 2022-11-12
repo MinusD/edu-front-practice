@@ -78,10 +78,49 @@ const reg = () => {
     //     let inputAns = document.getElementById('ans');
     //     inputAns.style.borderColor = 'red';
     // } else {
-        if (ans === "Да") {
-            alert('Круто!');
-        } else {
-            alert('Попробуй ещё раз');
-        }
+    if (ans === "Да") {
+        alert('Круто!');
+    } else {
+        alert('Попробуй ещё раз');
+    }
     // }
 }
+
+// Task 2
+
+function Accumulator(startingValue) {
+    this.value = parseInt(startingValue, 10);
+    this.read = function () {
+        this.value += parseInt(prompt('Введите число'), 10);
+    };
+}
+
+const createAccumulator = () => {
+    let val = document.getElementById('in-sum').value;
+    let accumulator = new Accumulator(val);
+    accumulator.read();
+    accumulator.read();
+    accumulator.read();
+    alert(accumulator.value);
+}
+
+// Task 3
+const truncate = (str, maxlength) => {
+    if (str.length > maxlength) {
+        return str.slice(0, maxlength - 1) + '…';
+    } else {
+        return str;
+    }
+}
+
+const goTruncate = () => {
+    let elem1 = document.getElementById('card1');
+    let elem2 = document.getElementById('card2');
+    let elem3 = document.getElementById('card3');
+
+    elem1.innerHTML = truncate(elem1.innerHTML, 80);
+    elem2.innerHTML = truncate(elem2.innerHTML, 80);
+    elem3.innerHTML = truncate(elem3.innerHTML, 80);
+}
+
+goTruncate();
