@@ -51,7 +51,7 @@ class Captcha {
 
         if (operation === 0) {
             this.captchaText = num1 + num2;
-            this.captchaOutput.innerHTML = num1 + ' + ' + num2 + ' = ' + this.captchaText;
+            this.captchaOutput.innerHTML = num1 + ' + ' + num2;
         } else {
             this.captchaText = num1 - num2;
             this.captchaOutput.innerHTML = num1 + ' - ' + num2;
