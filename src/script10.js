@@ -20,24 +20,31 @@ class Captcha {
         this.captchaButton.addEventListener('click', this.checkCaptcha.bind(this));
     }
 
+    isEmpty(object) {
+        return object.trim() !== '';
+
+    }
+
     checkCaptcha() {
-        if (this.failed === 0) {
-            if (this.captchaInput.value.trim() === this.captchaText) {
-                this.hideCaptcha();
+        if (!this.isEmpty(this.captchaInput.value)) {
+            if (this.failed === 0) {
+                if (this.captchaInput.value.trim() === this.captchaText) {
+                    this.hideCaptcha();
+                } else {
+                    this.failed = 1;
+                    this.captchaInput.value = '';
+                    this.captchaInput.placeholder = 'Неверно';
+                    this.captchaInput.style.borderColor = 'red';
+                    this.captchaButton.innerHTML = 'Попробовать еще раз';
+                    this.generateCaptchaV2();
+                }
             } else {
-                this.failed = 1;
-                this.captchaInput.value = '';
-                this.captchaInput.placeholder = 'Неверно';
-                this.captchaInput.style.borderColor = 'red';
-                this.captchaButton.innerHTML = 'Попробовать еще раз';
-                this.generateCaptchaV2();
-            }
-        } else {
-            if (this.captchaInput.value.trim() === this.captchaText.toString()) {
-                this.hideCaptcha();
-            } else {
-                this.failed++;
-                this.generateCaptchaV2();
+                if (this.captchaInput.value.trim() === this.captchaText.toString()) {
+                    this.hideCaptcha();
+                } else {
+                    this.failed++;
+                    this.generateCaptchaV2();
+                }
             }
         }
     }
