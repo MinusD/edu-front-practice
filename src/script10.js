@@ -21,8 +21,7 @@ class Captcha {
     }
 
     isEmpty(object) {
-        return object.trim() !== '';
-
+        return object.trim() === '';
     }
 
     checkCaptcha() {
