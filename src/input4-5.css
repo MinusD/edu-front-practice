@@ -4,13 +4,15 @@
 
 
 
+
+
 .mbc-dark-title {
     @apply text-3xl text-center text-gray-50 font-bold;
     font-family: 'Nunito', sans-serif;
 }
 
 .mbc-dark-title-2 {
-    @apply text-xl text-center text-gray-50 top-0;
+    @apply text-xl text-center text-gray-50 sticky top-0;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -19,22 +21,20 @@
 }
 
 .mbc-main-container {
-    @apply pt-20 py-10 items-center justify-center;
-    
+    @apply p-10 flex items-center justify-center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .mbc-dark-container {
-    @apply rounded-lg shadow-xl mt-10 px-8 py-3 bg-gray-800 relative;
-
-    flex-basis: 500px; height: 100%;
+    @apply w-full lg:w-1/2 rounded-lg shadow-xl mt-10 px-8 py-3 bg-gray-800 relative;
 }
 
 .mbc-dark-area {
     @apply bg-gray-900 text-sm p-3 text-violet-200 rounded-md;
 }
-
 .mbc-termins-list {
-    
+
 }
 
 .mbc-termins-list dt {
@@ -51,8 +51,8 @@
 
 .mbc-aside-a {
     @apply flex flex-row items-center h-12 px-4 rounded-lg
-     text-gray-600 bg-gray-100 bg-indigo-300 font-bold
-      dark:text-gray-500 dark:bg-gray-100 w-full text-center;
+    text-gray-600 bg-gray-100 bg-indigo-300 font-bold
+    dark:text-gray-500 dark:bg-gray-100 w-full text-center;
 }
 
 .mbc-hand-block {
@@ -137,6 +137,7 @@
 .mbc-magic-number-btn::placeholder {
     @apply underline;
 }
+
 
 
 .mbc-main-flex-container {

@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="ru">
+<html>
 <head>
-    <!--    <script src="https://kit.fontawesome.com/5605b824a7.js" crossorigin="anonymous"></script>-->
+    <script src="https://kit.fontawesome.com/5605b824a7.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../dist/output.css" rel="stylesheet">
-    <title>О нас</title>
+    <link href="./dist/styles/style9.css" rel="stylesheet">
+    <title>Практика 9</title>
     <link rel="icon" type="image/x-icon"
           href="https://raw.githubusercontent.com/MinusD/MBC-d.ru/master/public/favicon.ico">
 </head>
@@ -15,25 +15,19 @@
 <body>
 <div class="h-auto w-full bg-gray-900 mbc-dark-text relative">
     <section class="secJS">
-        <div class="capForm">
-            <form class="mt-10 flex flex-col space-y-8">
-                <div id="captcha" class="captcha">
-
-                    <div id="captcha-output"></div>
-                    <input id="captcha-input" type="text"/>
-                    <button type="button" id="captcha-button">Отправить</button>
-                </div>
-                <div>
-                    Хотите зарегистрироваться?
+        <div>
+            <form class="mt-10 space-y-8">
+                <label>
+                    Хотите зарегистрироватсья?
                     <input id="ans" class="w-full border rounded h-12 px-4 focus:outline-none text-gray-800"
                            placeholder="Ответ "
                            type="text"
                     />
-                </div>
+                </label>
                 <div>
                     <div class="flex flex-col md:flex-row md:items-center justify-between ">
-                        <button id="btn-for-captcha" onclick="reg()" disabled
-                                class="bg-orange-500 text-sm active:bg-gray-700 cursor-pointer font-regular text-white px-4 py-2 rounded uppercase disabled:opacity-50 disabled:cursor-not-allowed disabled:active:bg-orange-500"
+                        <button onclick="reg()"
+                                class="bg-orange-500 text-sm active:bg-gray-700 cursor-pointer font-regular text-white px-4 py-2 rounded uppercase"
                                 type="button">
                             Отправить
                         </button>
@@ -43,59 +37,48 @@
         </div>
     </section>
 
-    <section class="secJS bg-purple-900">
-        <div class="flex flex-col justify-between ">
-            <input id="in-sum" class="w-full border rounded h-12 px-4 focus:outline-none text-gray-800"
-                   placeholder="Ответ "
-                   type="text"
-            />
-            <button id="btn-in-sum" onclick="createAccumulator()"
-                    class="mt-5 bg-orange-500 text-sm active:bg-gray-700 cursor-pointer font-regular text-white px-4 py-2 rounded uppercase disabled:opacity-50 disabled:cursor-not-allowed disabled:active:bg-orange-500"
-                    type="button">
-                Отправить
-            </button>
-        </div>
+    <section class="secJS bg-blue-800">
+        <button onclick="login()"
+                class="bg-orange-500 text-sm active:bg-gray-700 cursor-pointer font-regular text-white px-4 py-2 rounded uppercase"
+                type="button">
+            Войти
+        </button>
     </section>
 
-    <section class="secJS bg-emerald-600">
-        <div class="flex flex-col md:flex-row md:items-center justify-between ">
-            <div class="w-full md:w-1/3 p-4">
-                <div class="bg-white rounded-lg shadow-lg p-4">
-                    <div class="flex flex-col items-center">
-                        <div class="w-16 h-16 rounded-full bg-orange-500 flex items-center justify-center mb-4">
-                            <i class="fas fa-user text-2xl text-white"></i>
-                        </div>
-                        <h3 class="text-gray-700 font-medium text-lg">Карточка 1</h3>
-                        <p class="text-gray-600 text-xs text-center mt-2" id="card1">Lorem ipsum dolor sit amet, consecrate Lorem end.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="w-full md:w-1/3 p-4">
-                <div class="bg-white rounded-lg shadow-lg p-4">
-                    <div class="flex flex-col items-center">
-                        <div class="w-16 h-16 rounded-full bg-orange-500 flex items-center justify-center mb-4">
-                            <i class="fas fa-user text-2xl text-white"></i>
-                        </div>
-                        <h3 class="text-gray-700 font-medium text-lg">Карточка 2</h3>
-                        <p class="text-gray-600 text-xs text-center mt-2" id="card2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, asperiores.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="w-full md:w-1/3 p-4">
-                <div class="bg-white rounded-lg shadow-lg p-4">
-                    <div class="flex flex-col items-center">
-                        <div class="w-16 h-16 rounded-full bg-orange-500 flex items-center justify-center mb-4">
-                            <i class="fas fa-user text-2xl text-white"></i>
-                        </div>
-                        <h3 class="text-gray-700 font-medium text-lg">Карточка 3</h3>
-                        <p class="text-gray-600 text-xs text-center mt-2" id="card3"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusasd asfsdgsd sdg sd gsd gsd gsdghdfsh sdfhdf hsdfh dsfhdfhd hsdfh
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="secJS bg-purple-800">
+        <button id="like" onclick="like()" style="background: gray;"
+                class="text-gray-100 rounded-full p-3 flex justify-center items-center align-middle">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                 stroke="currentColor" class="w-16 h-16 ">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"/>
+            </svg>
+        </button>
+    </section>
+
+    <section id="colcon" class="secJS bg-green-800" onmousemove="checker(event)">
+        <button id="collapse" onclick="start()" style="background: gray;"
+                class="text-gray-100 rounded-full p-3 flex justify-center items-center align-middle absolute top-1/2 left-1/2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                 stroke="currentColor" class="w-16 h-16 ">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"/>
+            </svg>
+        </button>
+    </section>
+
+    <section id="colcon2" class="secJS bg-orange-600" onmousemove="checker2(event)" onmouseup="stop2()">
+        <button id="collapse2" onmousedown="start2()" style="background: gray;"
+                class="text-gray-100 rounded-full p-3 flex justify-center items-center align-middle absolute top-1/2 left-1/2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                 stroke="currentColor" class="w-16 h-16 ">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"/>
+            </svg>
+        </button>
     </section>
 </div>
-<script src="./script10.js"></script>
+<script src="./script.js"></script>
+<script src="./menu.js"></script>
 </body>
 </html>

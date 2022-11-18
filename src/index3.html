@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="../dist/output.css" rel="stylesheet">
-  <title>О нас</title>
+  <link href="dist/styles/style1-4.css" rel="stylesheet">
+  <title>Практика3</title>
   <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/MinusD/MBC-d.ru/master/public/favicon.ico">
 </head>
 <style>
@@ -12,7 +12,7 @@
 </style>
 <body>
 <div class="h-auto w-full bg-gray-900 mbc-dark-text relative">
-<!-- <div class="fixed bottom-2 z-10 right-10">For student by student</div> -->
+<div class="fixed bottom-2 z-10 right-10">For student by student</div>
   <nav class="shadow bg-gray-800 text-gray-200 rounded-b-lg w-full absolute ">
     <div class="h-16 mx-auto px-5 flex items-center justify-between">
         <a class="text-2xl hover:text-cyan-500 transition-colors cursor-pointer"><img class="h-16" src="https://mbc-d.ru/storage/site-images/mbc.png"></a>
@@ -26,11 +26,11 @@
         </ul>
     </div>
  </nav> 
-<!-- <aside class="fixed  h-auto ml-5 px-5 py-2 grid grid-cols-1 gap-y-4 bg-gray-800 rounded-b-lg">
+<aside class="fixed  h-auto ml-5 px-5 py-2 grid grid-cols-1 gap-y-4 bg-gray-800 rounded-b-lg">
     <div class=""><a class="mbc-aside-a">Главная</a></div>
     <div class=""><a class="mbc-aside-a">Вторая</a></div>
     <div class=""><a class="mbc-aside-a">Не Главная</a></div>
-</aside> -->
+</aside>
 
   <main class="p-10 flex flex-col items-center justify-center">
     <div class="mt-10"></div>
@@ -209,103 +209,7 @@
       <img class="float-right hover:float-left h-36 w-auto m-4" src="https://sun1.userapi.com/sun1-25/s/v1/ig2/p52rHTju9m_KQKXFnVV6JSiG1zt8-zX18btd1giMzUU-3prflhTaCrk1gGxA8B49LyGaEDxcNqV3YZQMRbxHSlj9.jpg?size=431x770&quality=95&type=album" alt="">
       <p class="mt-4">А так же мы умеес шутить очень смешные анекдоты. Прям очень смешные. А так же мы умеес шутить очень смешные анекдоты. Прям очень смешные. А так же мы умеес шутить очень смешные анекдоты. Прям очень смешные. А так же мы умеес шутить очень смешные анекдоты. Прям очень смешные. А так же мы умеес шутить очень смешные анекдоты. Прям очень смешные.
       </p>
-    </section>
-
-    
-    <!-- Блок с формой -->
-    <section class="mbc-dark-container relative">
-      <h2 class="mbc-dark-title-2">Форма</h2>
-      <form action="#" method="get">
-        <div class="grid grid-cols-2 gap-5 mt-5">
-          <div class="mbc-input-div">
-            <label for="name">Имя</label>
-            <input required type="text" name="name" id="name" placeholder="Иваааан">
-          </div>
-          <div class="mbc-input-div">
-            <label for="tel">Телефон (123-456-7890)</label>
-            <input required type="tel" name="tel" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-          </div>
-          <div class="mbc-input-div">
-            <label for="email">Email</label>
-            <input required type="email" name="email" id="email">
-          </div>
-          <div class="mbc-input-div">
-            <label for="password">Пароль</label>
-            <input required type="password" name="password" id="password">
-          </div>
-          <div class="mbc-input-div col-span-2">
-            <label for="number">Магическое число</label>
-            <input class="mbc-magic-number-btn" type="number" name="number" id="number" min="2" max="1000" placeholder="Магическое число 42">
-          </div>
-          <div class="mbc-input-div col-span-2">
-            <label for="avatar">Аватарка</label>
-            <input type="file" name="avatar" id="avatar">
-          </div>
-        </div>
-        <fieldset class="p-4 border border-gray-300 rounded-md focus:outline-none focus:border-purple-500 focus:shadow focus:shadow-purple-500"> 
-          <legend class="bg-gray-800 px-1 ml-4 font-semibold">Пол</legend>
-          <div class="flex items-center space-x-6">
-            <div class="mbc-radio-btn">
-              <input type="radio" name="radio1" id="radioButton2" checked/>
-              <label for="radioButton1">
-                Мужчина
-              </label>
-            </div>
-            <div class="mbc-radio-btn">
-              <input type="radio" name="radio1" id="radioButton2" />
-              <label for="radioButton2">
-                Женщина
-              </label>
-            </div>
-          </div>
-        </fieldset>
-
-        <div class="mt-4">
-          <input id="spam" aria-describedby="spam" type="checkbox" class="" required="">
-          <label for="spam">Хочу получить рассылку</label>
-        </div>
-
-        <div class="mbc-input-div mt-5">
-          <label for="datetime" class="">
-            День рождение
-          </label>
-          <input id="datetime" type="datetime-local" name="datetime">
-        </div>
-
-        <button type="submit" class="md:w-32 bg-indigo-600 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-indigo-500 transition ease-in-out duration-300">
-          Отправить
-        </button>
-
-      </form>
-    </section>
-
-    <!-- Блок с формой 2 -->
-    <section class="mbc-dark-container relative">
-      <h2 class="mbc-dark-title-2 mb-3">Форма 2</h2>
-      <form action="#" method="get">
-        <textarea class="bg-gray-800 border rounded-md " name="area" id="area" cols="30" rows="10" maxlength="255" minlength="10" placeholder="Text here" required></textarea>
-        <select name="group" id="group" multiple required size="11" class="font-bold rounded border-2 border-purple-700 text-gray-600 pl-5 pr-10 bg-white hover:border-gray-400 focus:outline-none appearance-none">
-            <option>ИКБО</option>
-            <option>ИВБО</option>
-            <option>ИНБО</option>
-            <option>УУБО</option>
-            <option>ХЕБО</option>
-            <option>БСБО</option>
-            <option>БАСО</option>
-        </select>
-      </form>
-    </section>
-
-    <section class="mbc-dark-container">
-      <h2 class="mbc-dark-title-2 mb-3">Встроенный элемент</h2>
-      <div class="h-[600]">
-        
-        <iframe src="./video.html" frameborder="0" class="w-full h-96"></iframe>  
-      </div>
-    </section>
-
-
-
+      </section>
   </div>
 
   <!-- Футер -->
@@ -323,6 +227,6 @@
     <address class="text-gray-500">Moscow</address>
 	</footer>
 </section>
-</div>
+<script src="./menu.js"></script>
 </body>
 </html>

@@ -825,3 +825,28 @@
 .footerTitle:hover::after {
     transform: scaleX(1.2);
 }
+
+.secJS {
+    @apply relative h-screen w-full flex justify-center items-center align-middle content-center;
+}
+
+
+.capForm {
+    @apply w-1/3;
+}
+
+.captcha {
+
+}
+
+.captcha input {
+    @apply w-full border rounded h-12 px-4 focus:outline-none text-gray-800;
+}
+
+.captcha button {
+    @apply mt-3 bg-orange-500 text-sm active:bg-gray-700 cursor-pointer text-white px-4 py-2 rounded uppercase;
+}
+
+.captcha div {
+    @apply w-full text-3xl text-center bg-gradient-to-br from-purple-700 to-blue-600 text-transparent font-bold bg-clip-text;
+}

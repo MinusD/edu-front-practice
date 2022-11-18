@@ -825,3 +825,7 @@
 .footerTitle:hover::after {
     transform: scaleX(1.2);
 }
+
+.secJS {
+    @apply relative h-screen w-full flex justify-center items-center align-middle content-center;
+}
