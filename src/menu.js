@@ -12,6 +12,7 @@ const insertMenu = () => {
         <li><a href="./index8.html">Практическая №8</a></li>
         <li><a href="./index9.html">Практическая №9</a></li>
         <li><a href="./index10.html">Практическая №10</a></li>
+        <li><a href="./index11.html">Практическая №11</a></li>
     </ul>
   </div>`);
 
@@ -19,12 +20,21 @@ const insertMenu = () => {
     div.style.position = 'fixed';
     div.style.top = '0';
     div.style.right = '0';
-    div.style.backgroundColor = '#2a2a2a';
+    div.style.backgroundColor = 'rgba(42,42,42,0.8)';
     div.style.zIndex = '1000';
-    div.style.padding = '10px';
+    // div.style.padding = '10px';
     div.style.borderRadius = '0 0 0 10px';
     div.style.boxShadow = '0 0 10px 0 rgba(0, 0, 0, 0.5)';
     div.style.color = '#fff';
+
+    // Добавить стиль для ссылок
+    let links = document.querySelectorAll('#fixed-menu-block a');
+    for (let i = 0; i < links.length; i++) {
+        links[i].style.color = '#fff';
+        links[i].style.display = 'block';
+        links[i].style.padding = '2px 10px';
+        links[i].style.textDecoration = 'none';
+    }
 }
 
 insertMenu();
