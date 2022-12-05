@@ -13,7 +13,8 @@ const insertMenu = () => {
         <li><a href="./index9.html">Практическая №9</a></li>
         <li><a href="./index10.html">Практическая №10</a></li>
         <li><a href="./index11.html">Практическая №11</a></li>
-        <li><a href="./index11.html"></a></li>
+        <li><a href="./index12.html">Практическая №12</a></li>
+<!--        <li><a href="./index11.html"></a></li>-->
     </ul>
   </div>`);
 

@@ -850,3 +850,15 @@
 .captcha div {
     @apply w-full text-3xl text-center bg-gradient-to-br from-purple-700 to-blue-600 text-transparent font-bold bg-clip-text;
 }
+
+.noti-cont {
+    @apply z-[9999] fixed top-0 left-0 flex flex-col justify-center items-center gap-y-3;
+}
+
+.noti-panel {
+    @apply flex flex-col justify-center items-center gap-y-4;
+}
+
+.notification {
+    @apply bg-blue-800 px-4 py-2;
+}

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <!--    <script src="https://kit.fontawesome.com/5605b824a7.js" crossorigin="anonymous"></script>-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../dist/output.css" rel="stylesheet">
+    <title>Практика 12</title>
+    <link rel="icon" type="image/x-icon"
+          href="https://raw.githubusercontent.com/MinusD/MBC-d.ru/master/public/favicon.ico">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap');
+</style>
+<body>
+<div class="h-auto w-full bg-gray-900 mbc-dark-text relative">
+    <section class="secJS bg-sky-600">
+        <div>
+            <!-- Список со случайными ссылками -->
+            <ul class="list-disc list-inside">
+                <li><a href="https://www.google.com/">Google</a></li>
+                <li><a href="./index6.html">Практическая 6</a></li>
+                <li><a href="https://www.youtube.com/">YouTube</a></li>
+                <li><a href="https://www.facebook.com/">Facebook</a></li>
+                <li><a href="https://www.instagram.com/">Instagram</a></li>
+                <li><a href="./index9.html">Практическая 9</a></li>
+                <li><a href="https://www.twitter.com/">Twitter</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="secJS bg-purple-900">
+        <div>
+            <div class="panel">
+                <button onclick="createList()">Добавить пункт</button>
+            </div>
+            <ul id="list">
+
+            </ul>
+        </div>
+    </section>
+
+    <section class="secJS bg-green-700 relative">
+        <div id="noti-panel" class="noti-panel">
+            <h1>Параметры уведомления</h1>
+            <input type="text" id="n-title" placeholder="Заголовок">
+            <textarea id="n-text" placeholder="Текст уведомления"></textarea>
+            <button onclick="createNotification2()">Создать уведомление</button>
+            <div class="noti-cont" id="noti-cont">
+
+            </div>
+        </div>
+    </section>
+
+    <section class="secJS bg-blue-800" id="center-cont">
+        <img id="center-img" src="./dist/images/card-img-02.png" alt=""/>
+    </section>
+    <section class="secJS " onmousedown="showCoords(event)">
+        <div id="coords">Coords (click)</div>
+    </section>
+</div>
+<script src="./script12.js"></script>
+<script src="./menu.js"></script>
+</body>
+</html>

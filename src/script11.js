@@ -63,7 +63,7 @@ const filter = (a, b) => {
     let newArr = [];
     for (let i = 0; i < arr2.length; i++) {
         if (arr2[i] >= a && arr2[i] <= b) {
-            newArr.push(arr[i]);
+            newArr.push(arr2[i]);
         }
     }
     return newArr;
@@ -100,11 +100,10 @@ console.log(arr3.sort(sortFunc).reverse());
  */
 
 let counter = 2;
+let notis = document.getElementById('notis')
+let notisCounter = document.getElementById('notis-counter')
 
 const addNotification = () => {
-    let notis = document.getElementById('notis')
-    let notisCounter = document.getElementById('notis-counter')
-    let notification = document.createElement('div');
     counter++;
     notis.insertAdjacentHTML("afterbegin",
         `<div class="noti-item">
