@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <!--    <script src="https://kit.fontawesome.com/5605b824a7.js" crossorigin="anonymous"></script>-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../dist/output.css" rel="stylesheet">
+    <title>Практика 13</title>
+    <link rel="icon" type="image/x-icon"
+          href="https://raw.githubusercontent.com/MinusD/MBC-d.ru/master/public/favicon.ico">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap');
+</style>
+<body>
+<div class="h-auto w-full bg-gray-900 mbc-dark-text relative">
+    <section class="secJS bg-green-700">
+        <ul id="contents">
+            <li><a href="https://www.google.com/">Google</a></li>
+            <li><a href="./index6.html">Практическая 6</a></li>
+            <li><a href="https://www.youtube.com/">YouTube</a></li>
+            <li><a href="https://www.facebook.com/">Facebook</a></li>
+            <li><a href="https://www.instagram.com/">Instagram</a></li>
+            <li><a href="./index9.html">Практическая 9</a></li>
+            <li><a href="https://www.twitter.com/">Twitter</a></li>
+        </ul>
+    </section>
+
+    <section class="secJS bg-red-600">
+        <div id="gallery">
+            <img id="bigImg" src="https://www.w3schools.com/howto/img_nature_wide.jpg" alt="Nature" width="600"
+                 height="600">
+            <div class="gal-list">
+                <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="Snow">
+                <img src="https://www.w3schools.com/howto/img_mountains_wide.jpg" alt="Mountains">
+                <img src="https://www.w3schools.com/howto/img_lights_wide.jpg" alt="Lights">
+                <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" alt="Nature">
+            </div>
+        </div>
+    </section>
+
+    <section class="secJS bg-sky-500">
+        <ul id="list">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li>Item 7</li>
+            <li>Item 8</li>
+            <li>Item 9</li>
+        </ul>
+    </section>
+
+    <section class="secJS bg-purple-700">
+        <!--        * 4.	Создайте слайдер: Слайдер должен нормально работать при резком движении мыши влево или-->
+        <!--        * вправо за пределы полосы. При этом бегунок должен останавливаться чётко в нужном конце полосы.-->
+        <!--        * При нажатом бегунке мышь может выходить за пределы полосы слайдера, но слайдер пусть всё равно-->
+        <!--        * работает (это удобно для пользователя).-->
+        <div id="slider" class="slider">
+            <div id="thumb" class="thumb"></div>
+        </div>
+    </section>
+    <section class="secJS bg-orange-600 relative">
+        <div class="cart" id="cart">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+            </svg>
+        </div>
+        <div class="cart-list" id="cart-list">
+        </div>
+        <div class="total" id="total">Итого: 0 руб</div>
+        <div class="goods" id="goods">
+            <div draggable="true" class="good" data-price="1000">
+                <h2>Товар 1</h2>
+                <div>Цена:  1000</div>
+            </div>
+            <div draggable="true" class="good" data-price="2000">
+                <h2>Товар 2</h2>
+                <div>Цена:  2000</div>
+            </div>
+            <div draggable="true" class="good" data-price="3000">
+                <h2>Товар 3</h2>
+                <div>Цена:  3000</div>
+            </div>
+            <div draggable="true" class="good" data-price="4000">
+                <h2>Товар 4</h2>
+                <div>Цена:  4000</div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="secJS  overflow-hidden">
+        <div id="container" class="color-blocks">
+
+
+        </div>
+    </div>
+</div>
+<script src="./script13.js"></script>
+<script src="./menu.js"></script>
+</body>
+</html>

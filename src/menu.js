@@ -14,7 +14,7 @@ const insertMenu = () => {
         <li><a href="./index10.html">Практическая №10</a></li>
         <li><a href="./index11.html">Практическая №11</a></li>
         <li><a href="./index12.html">Практическая №12</a></li>
-<!--        <li><a href="./index11.html"></a></li>-->
+        <li><a href="./index13.html">Практическая №13</a></li>
     </ul>
   </div>`);
 
@@ -35,8 +35,10 @@ const insertMenu = () => {
         links[i].style.display = 'block';
         links[i].style.padding = '2px 10px';
         links[i].style.textDecoration = 'none';
+
         if (links[i].href === window.location.href) {
             links[i].style.backgroundColor = 'rgba(0,0,0,0.5)';
+            links[i].style.borderRadius = '10px';
         }
     }
 }
