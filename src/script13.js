@@ -298,3 +298,28 @@ function fall(elem, acceleration = 1) {
         }
     }
 }
+
+/*
+ * Анимация набора текста
+ */
+
+let text = document.getElementById('text-animation');
+let textArr;
+let i = 0;
+
+text.addEventListener('click', () => {
+    textArr = text.innerHTML.split('');
+    text.innerHTML = '';
+    type();
+});
+
+const type = () => {
+    if (i < textArr.length) {
+        text.innerHTML += textArr[i];
+        i++;
+        setTimeout(type, 100);
+    } else {
+        i = 0;
+    }
+}
+
